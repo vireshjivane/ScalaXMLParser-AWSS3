@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="default"
+		module="scalaxmlparserwithawss3access$sources_javadoc_2.10"
+		revision="1.0"
+		status="integration"
+		publication="20150526225711"
+	/>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.5" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile);scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.10.5/">
+			<artifact name="scala-library" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-library" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-support" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-support" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-support" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-core" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-core" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="commons-logging" name="commons-logging" rev="1.1.3" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="commons-logging" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="commons-logging" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.3.4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="httpclient" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="httpclient" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.httpcomponents" name="httpcore" rev="4.3.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="httpcore" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="httpcore" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="commons-codec" name="commons-codec" rev="1.6" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="commons-codec" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="commons-codec" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.3.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jackson-databind" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jackson-databind" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.3.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jackson-annotations" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jackson-annotations" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.3.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jackson-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jackson-core" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="joda-time" name="joda-time" rev="2.7" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="joda-time" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="joda-time" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-simpledb" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-simpledb" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-simpledb" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-simpleworkflow" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-simpleworkflow" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-simpleworkflow" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-storagegateway" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-storagegateway" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-storagegateway" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-route53" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-route53" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-route53" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-s3" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-s3" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-s3" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-kms" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-kms" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-kms" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-importexport" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-importexport" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-importexport" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-sts" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-sts" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-sts" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-sqs" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-sqs" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-sqs" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-rds" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-rds" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-rds" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-redshift" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-redshift" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-redshift" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-elasticbeanstalk" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-elasticbeanstalk" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-elasticbeanstalk" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-glacier" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-glacier" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-glacier" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-sns" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-sns" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-sns" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-iam" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-iam" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-iam" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-datapipeline" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-datapipeline" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-datapipeline" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-elasticloadbalancing" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-elasticloadbalancing" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-elasticloadbalancing" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-emr" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-emr" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-emr" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-elasticache" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-elasticache" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-elasticache" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-elastictranscoder" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-elastictranscoder" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-elastictranscoder" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-ec2" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-ec2" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-ec2" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-dynamodb" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-dynamodb" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-dynamodb" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cloudtrail" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-cloudtrail" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-cloudtrail" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cloudwatch" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-cloudwatch" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-cloudwatch" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-logs" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-logs" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-logs" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cognitoidentity" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-cognitoidentity" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-cognitoidentity" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cognitosync" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-cognitosync" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-cognitosync" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-directconnect" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-directconnect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-directconnect" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cloudformation" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-cloudformation" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-cloudformation" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cloudfront" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-cloudfront" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-cloudfront" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-kinesis" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-kinesis" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-kinesis" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-opsworks" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-opsworks" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-opsworks" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-ses" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-ses" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-ses" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-autoscaling" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-autoscaling" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-autoscaling" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cloudsearch" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-cloudsearch" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-cloudsearch" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cloudwatchmetrics" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-cloudwatchmetrics" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-cloudwatchmetrics" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-swf-libraries" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-swf-libraries" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-swf-libraries" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-codedeploy" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-codedeploy" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-codedeploy" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-config" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-config" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-config" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-lambda" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-lambda" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-lambda" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-ecs" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-ecs" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-ecs" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-cloudhsm" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-cloudhsm" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-cloudhsm" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-ssm" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-ssm" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-ssm" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-workspaces" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-workspaces" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-workspaces" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-machinelearning" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-machinelearning" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-machinelearning" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.amazonaws" name="aws-java-sdk-directory" rev="1.9.37" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-java-sdk-directory" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-java-sdk-directory" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-xml" rev="2.11.0-M4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.0-M4/">
+			<artifact name="scala-xml" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-xml" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.5" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="scala-compiler" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-compiler" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.10.5" transitive="false" conf="scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.10.5/">
+			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-reflect" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="jline" rev="2.10.5" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="jline" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jline" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.fusesource.jansi" name="jansi" rev="1.4" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="jansi" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jansi" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+	</dependencies>
+</ivy-module>
